@@ -6,27 +6,27 @@
 
 @layer base {
   :root {
-    /* Base colors - Professional palette */
-    --background: 248 250 252;
+    /* Base colors - Clean blue and white palette */
+    --background: 255 255 255;
     --foreground: 15 23 42;
 
-    /* Card system */
+    /* Card system - Pure white cards */
     --card: 255 255 255;
     --card-foreground: 15 23 42;
 
     --popover: 255 255 255;
     --popover-foreground: 15 23 42;
 
-    /* Primary - Deep industrial blue */
-    --primary: 217 91% 60%;
+    /* Primary - Professional blue */
+    --primary: 217 91% 50%;
     --primary-foreground: 255 255 255;
-    --primary-hover: 217 91% 55%;
+    --primary-hover: 217 91% 45%;
 
-    /* Secondary - Light blue for accents */
-    --secondary: 214 95% 93%;
-    --secondary-foreground: 217 91% 60%;
+    /* Secondary - Light blue accents */
+    --secondary: 217 91% 95%;
+    --secondary-foreground: 217 91% 45%;
 
-    /* Status colors for IoT monitoring */
+    /* Status colors - Blue-friendly palette */
     --success: 142 76% 36%;
     --success-foreground: 255 255 255;
     --warning: 38 92% 50%;
@@ -34,30 +34,30 @@
     --danger: 0 84% 60%;
     --danger-foreground: 255 255 255;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 100 7% 23%;
+    --muted: 217 91% 97%;
+    --muted-foreground: 100 7% 40%;
 
-    --accent: 217 91% 60%;
+    --accent: 217 91% 50%;
     --accent-foreground: 255 255 255;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 255 255 255;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 217 91% 60%;
+    --border: 217 32% 90%;
+    --input: 217 32% 95%;
+    --ring: 217 91% 50%;
 
     --radius: 0.75rem;
 
-    /* Gradients for hero and premium sections */
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 70%));
-    --gradient-hero: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 50%), hsl(142 76% 36%));
-    --gradient-card: linear-gradient(135deg, hsl(255 255 255 / 0.8), hsl(214 95% 93% / 0.3));
+    /* Gradients for hero and premium sections - Blue and white theme */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 50%), hsl(217 91% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(217 91% 45%), hsl(217 91% 60%), hsl(217 100% 85%));
+    --gradient-card: linear-gradient(135deg, hsl(255 255 255), hsl(217 91% 98%));
     
-    /* Shadows for depth */
-    --shadow-card: 0 4px 20px hsl(217 91% 60% / 0.1);
-    --shadow-hover: 0 8px 30px hsl(217 91% 60% / 0.15);
-    --shadow-modal: 0 25px 50px hsl(217 91% 60% / 0.25);
+    /* Shadows for depth - Blue tinted */
+    --shadow-card: 0 4px 20px hsl(217 91% 50% / 0.08);
+    --shadow-hover: 0 8px 30px hsl(217 91% 50% / 0.12);
+    --shadow-modal: 0 25px 50px hsl(217 91% 50% / 0.20);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -65,12 +65,12 @@
 
     --sidebar-background: 255 255 255;
     --sidebar-foreground: 15 23 42;
-    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary: 217 91% 50%;
     --sidebar-primary-foreground: 255 255 255;
-    --sidebar-accent: 214 95% 93%;
-    --sidebar-accent-foreground: 217 91% 60%;
-    --sidebar-border: 214 32% 91%;
-    --sidebar-ring: 217 91% 60%;
+    --sidebar-accent: 217 91% 96%;
+    --sidebar-accent-foreground: 217 91% 45%;
+    --sidebar-border: 217 32% 92%;
+    --sidebar-ring: 217 91% 50%;
   }
 
   .dark {
@@ -83,12 +83,12 @@
     --popover: 30 41 59;
     --popover-foreground: 248 250 252;
 
-    --primary: 217 91% 70%;
+    --primary: 217 91% 65%;
     --primary-foreground: 15 23 42;
-    --primary-hover: 217 91% 75%;
+    --primary-hover: 217 91% 70%;
 
     --secondary: 30 41 59;
-    --secondary-foreground: 248 250 252;
+    --secondary-foreground: 217 91% 75%;
 
     --success: 142 76% 45%;
     --warning: 38 92% 60%;
@@ -97,7 +97,7 @@
     --muted: 30 41 59;
     --muted-foreground: 148 163 184;
 
-    --accent: 217 91% 70%;
+    --accent: 217 91% 65%;
     --accent-foreground: 15 23 42;
 
     --destructive: 0 84% 70%;
@@ -105,20 +105,20 @@
 
     --border: 30 41 59;
     --input: 30 41 59;
-    --ring: 217 91% 70%;
+    --ring: 217 91% 65%;
     
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 70%), hsl(217 91% 80%));
-    --gradient-hero: linear-gradient(135deg, hsl(217 91% 70%), hsl(217 91% 60%), hsl(142 76% 45%));
-    --gradient-card: linear-gradient(135deg, hsl(30 41 59 / 0.8), hsl(217 91% 70% / 0.1));
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 65%), hsl(217 91% 75%));
+    --gradient-hero: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 70%), hsl(217 100% 85%));
+    --gradient-card: linear-gradient(135deg, hsl(30 41 59 / 0.9), hsl(217 91% 65% / 0.1));
 
     --sidebar-background: 15 23 42;
     --sidebar-foreground: 248 250 252;
-    --sidebar-primary: 217 91% 70%;
+    --sidebar-primary: 217 91% 65%;
     --sidebar-primary-foreground: 15 23 42;
     --sidebar-accent: 30 41 59;
-    --sidebar-accent-foreground: 248 250 252;
+    --sidebar-accent-foreground: 217 91% 75%;
     --sidebar-border: 30 41 59;
-    --sidebar-ring: 217 91% 70%;
+    --sidebar-ring: 217 91% 65%;
   }
 }
 
